@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title-page {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-header {
+  font-size: 30px;
+  text-align: center;
+}
+
+.title-txt {
+  margin-bottom: 20px;
+}
+
 #portrait {
   height: 200px;
 }
