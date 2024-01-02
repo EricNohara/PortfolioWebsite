@@ -32,18 +32,22 @@ body {
 
 .title-header {
   font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
   text-align: center;
   color: var(--grey);
   align-self: end;
 }
 
-.title-txt {
-  margin-bottom: 40px;
-}
-
 .txt1 {
   display: flex;
   justify-content: center;
+  font-weight: 300;
+}
+
+.txt2 {
+  margin-bottom: 40px;
+  font-weight: 300;
 }
 
 .eric {
@@ -57,14 +61,19 @@ body {
 
 /* ABOUT ME BUTTON */
 .title-btn {
-  height: 40px;
+  height: 50px;
   width: 300px;
+  font-weight: 600;
   justify-self: center;
   align-self: start;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   font-size: 20px;
+  color: var(--secondary);
+  background-color: inherit;
+  border: 3px solid var(--secondary);
+  border-radius: 3px;
 }
 
 .scroll-icon {
