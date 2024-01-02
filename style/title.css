@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* COLOR PALLETTE */
+:root {
+  --black: #000000;
+  --bblue: #04080d;
+  --dblue: #1b263b;
+  --mblue: #415a77;
+  --lblue: #778da9;
+  --grey: #e0e1dd;
+  --secondary: #ec2d47;
+}
+
+/* TITLE PAGE STYLING */
+.title-page {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 60vh 20vh 20vh;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(circle, var(--dblue) 0%, var(--black) 100%);
+}
+
+.title-header {
+  font-size: 30px;
+  text-align: center;
+  color: var(--grey);
+  align-self: end;
+}
+
+.title-txt {
+  margin-bottom: 40px;
+}
+
+.txt1 {
+  display: flex;
+  justify-content: center;
+}
+
+.eric {
+  color: var(--secondary);
+  margin-left: 15px;
+}
+
+#portrait {
+  height: 200px;
+}
+
+/* ABOUT ME BUTTON */
+.title-btn {
+  height: 40px;
+  width: 300px;
+  justify-self: center;
+  align-self: start;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+}
+
+.scroll-icon {
+  height: 25px;
+}
+
+/* FOOTER */
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+}
+
+.social-icon {
+  height: 40px;
+  margin: 20px;
+}
