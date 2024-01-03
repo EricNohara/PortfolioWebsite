@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COLOR PALLETTE */
+:root {
+  --black: #000000;
+  --bblue: #04080d;
+  --dblue: #1b263b;
+  --mblue: #415a77;
+  --lblue: #778da9;
+  --grey: #e0e1dd;
+  --dgrey: #152130;
+  --secondary: #ec2d47;
+}
+
+#navbar {
+  background-color: var(--dgrey);
+  box-shadow: 0 0 20px var(--dgrey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  height: 50px;
+  width: 100vw;
+}
+
+.nav {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+  margin-right: 40px;
+  transition-duration: 0.4s;
+}
+
+.nav:hover {
+  cursor: pointer;
+  transition-duration: 0.4s;
+  color: var(--secondary);
+}
+
+nav[data-cur-page="home"] .home-btn {
+  color: var(--secondary);
+}
+
+nav[data-cur-page="about"] .abt-btn {
+  color: var(--secondary);
+}
+
+nav[data-cur-page="projects"] .projects-btn {
+  color: var(--secondary);
+}
+
+nav[data-cur-page="contact"] .contact-btn {
+  color: var(--secondary);
+}

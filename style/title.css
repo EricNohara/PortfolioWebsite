@@ -106,6 +106,7 @@ body {
 .s-icon {
   color: var(--lblue);
   transition-duration: 0.4s;
+  justify-self: center;
 }
 
 .s-icon:hover {
