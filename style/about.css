@@ -21,7 +21,7 @@
 #abt-article {
   display: grid;
   grid-template-columns: repeat(3, 30vw);
-  grid-template-rows: 28vw 40vh;
+  grid-template-rows: 28vw 40vw;
 }
 
 .article-wrapper {
@@ -57,6 +57,7 @@
   grid-column: 2/3;
   display: grid;
   grid-template-rows: 40% 60%;
+  margin-right: 1vw;
 }
 
 #info {
@@ -72,7 +73,6 @@
 
 .name {
   letter-spacing: 1px;
-  margin-bottom: 10px;
   margin: 0.5vw 0 0.5vw 1vw;
   font-size: 2.7vw;
 }
@@ -101,4 +101,24 @@ b {
 #box3 {
   grid-column: 3/4;
   grid-row: 1/4;
+  background-color: var(--dblue);
+  border-radius: 10px;
+}
+
+.stack-title {
+  text-align: center;
+  font-size: 2.7vw;
+  margin: 2vw 0 2vw 1vw;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 0 0 2.2vw 2.2vw;
+}
+
+.tech-icon {
+  margin-right: 3vw;
 }
