@@ -14,17 +14,79 @@
   background-image: radial-gradient(circle, var(--dblue) 0%, var(--black) 100%);
   width: 100vw;
   height: 150vh;
-  display: grid;
-  grid-template-columns: repeat(5, 20vw);
-  grid-template-rows: auto;
   color: var(--grey);
 }
 
+#abt-article {
+  display: grid;
+  grid-template-columns: repeat(3, 30vw);
+  grid-template-rows: auto;
+}
+
+.article-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .abt-title {
-  grid-column: 1 / span 5;
-  justify-self: center;
-  align-self: center;
   font-size: 50px;
   letter-spacing: 2px;
   word-spacing: 2px;
+  text-align: center;
+  padding: 40px 0 40px 0;
+}
+
+#box1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+}
+
+#portrait {
+  width: 28vw;
+  height: auto;
+  border-radius: 10px;
+  align-self: center;
+  justify-content: center;
+}
+
+#box2 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 40% 60%;
+}
+
+#info {
+  background-color: var(--dblue);
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+
+#message {
+  background-color: var(--dblue);
+  border-radius: 10px;
+}
+
+.name {
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  margin: 5px 0 5px 10px;
+}
+
+.description {
+  font-weight: 400;
+  margin: 10px 0 0 10px;
+}
+
+.txt {
+  margin: 10px 15px 10px 15px;
+  font-size: 17px;
+  /* font-weight: 300; */
+  line-height: 25px;
+}
+
+b {
+  transition-duration: 0.4s;
 }

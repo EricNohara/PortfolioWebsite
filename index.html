@@ -30,10 +30,10 @@
       <!-- SIDEBAR WITH ICONS -->
       <footer class="socials">
         <div class="socials-grid">
-          <a href="https://www.linkedin.com/in/eric-nohara-leclair-189298291/" target="_blank" rel="noreferrer noopener" class="social-link"><i class="s-icon fa-brands fa-linkedin fa-3x"></i></a>
-          <a href="https://github.com/EricNohara" target="_blank" rel="noreferrer noopener" class="social-link"><i class="s-icon fa-brands fa-github fa-3x"></i></a>
-          <a href="mailto:ernohara@bu.edu" target="_blank" rel="noreferrer noopener" class="social-link"><i class="s-icon fa-solid fa-envelope fa-3x"></i></a>
-          <a href="https://www.instagram.com/eric.nohara/" target="_blank" rel="noreferrer noopener" class="social-link"><i class="s-icon fa-brands fa-instagram fa-3x"></i></a>
+          <a href="https://www.linkedin.com/in/eric-nohara-leclair-189298291/" target="_blank" rel="noreferrer noopener" class="social-link"><i class="hover-glow s-icon fa-brands fa-linkedin fa-3x"></i></a>
+          <a href="https://github.com/EricNohara" target="_blank" rel="noreferrer noopener" class="social-link"><i class="hover-glow s-icon fa-brands fa-github fa-3x"></i></a>
+          <a href="mailto:ernohara@bu.edu" target="_blank" rel="noreferrer noopener" class="social-link"><i class="hover-glow s-icon fa-solid fa-envelope fa-3x"></i></a>
+          <a href="https://www.instagram.com/eric.nohara/" target="_blank" rel="noreferrer noopener" class="social-link"><i class="hover-glow s-icon fa-brands fa-instagram fa-3x"></i></a>
         </div>
       </footer>
     </div>
@@ -50,28 +50,42 @@
     <!-- ABOUT PAGE -->
     <div class="about-page">
       <h1 class="abt-title">About Me</h1>
-      <article>
-        <h2>Eric Nohara-LeClair</h2>
-        <h3>Web Developer and Sophomore College Student</h3>
-        <img src="./assets/images/Eric Portrait.jpg" alt="Eric Nohara-LeClair Portrait" id="portrait">
-        <p class="aboutme">Hi, my name is <b>Eric Nohara-LeClair</b>. I'm a current sophomore at <b>Boston University</b> studying <b>Computer Science</b>. I'm committed to broadening and improving my skills as a developer outside of classes. Outside of work, I love going to sports events, powerlifting, and listening to music. Thanks for stopping by and checking out my <b>projects</b>!</p>
-        <div class="tech-stack">
-          <p class="stack-title">Tech Stack</p>
-          <ul>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>React.js</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>C</li>
-            <li>OCaml</li>
-            <li>x86 Assembly</li>
-          </ul>
-        </div>          
-      </article>
+      <div class="article-wrapper">
+        <article id="abt-article">
+          <div id="box1"><img src="./assets/images/Eric Portrait Square.jpg" alt="Eric Nohara-LeClair Portrait" id="portrait"></div>
+          <div id="box2">
+            <section id="info">
+              <h2 class="name">Eric Nohara-LeClair</h2>
+              <h3 class="description">Web Developer and Sophomore College Student</h3>
+            </section>
+            <section id="message">
+              <div class="txt">
+                <p class="aboutme">I'm a current sophomore at <b class="hover-glow">Boston University</b> pursuing a major in <b class="hover-glow">Computer Science</b>. I'm committed to broadening and improving my skills as a developer. Thanks for stopping by and checking out my <b class="hover-glow">projects</b>!</p>
+              </div>
+            </section>           
+          </div>  
+          
+          <div id="box3">
+            <div class="tech-stack">
+              <p class="stack-title">Tech Stack</p>
+              <ul>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React.js</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C</li>
+                <li>OCaml</li>
+                <li>x86 Assembly</li>
+              </ul>
+            </div>
+          </div>                   
+        </article>
+      </div>
     </div>
-
+    
+    
     <!-- PROJECTS PAGE -->
     <div class="projects-page">
       <header>

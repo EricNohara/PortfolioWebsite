@@ -74,3 +74,10 @@ body {
   background: linear-gradient(var(--dsecondary), var(--secondary));
   filter: blur(30px);
 }
+
+.hover-glow:hover {
+  cursor: pointer;
+  color: var(--grey);
+  text-shadow: 0 0 10px var(--grey);
+  transition-duration: 0.4s;
+}
