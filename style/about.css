@@ -1,0 +1,30 @@
+/* COLOR PALLETTE */
+:root {
+  --black: #000000;
+  --bblue: #04080d;
+  --dblue: #1b263b;
+  --mblue: #415a77;
+  --lblue: #778da9;
+  --grey: #e0e1dd;
+  --dgrey: #152130;
+  --secondary: #ec2d47;
+}
+
+.about-page {
+  background-image: radial-gradient(circle, var(--dblue) 0%, var(--black) 100%);
+  width: 100vw;
+  height: 150vh;
+  display: grid;
+  grid-template-columns: repeat(5, 20vw);
+  grid-template-rows: auto;
+  color: var(--grey);
+}
+
+.abt-title {
+  grid-column: 1 / span 5;
+  justify-self: center;
+  align-self: center;
+  font-size: 50px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
