@@ -53,6 +53,12 @@ body {
 .eric {
   color: var(--secondary);
   margin-left: 15px;
+  transition-duration: 0.4s;
+}
+
+.eric:hover {
+  text-shadow: 0 0 40px var(--secondary);
+  transition-duration: 0.4s;
 }
 
 #portrait {
@@ -64,6 +70,8 @@ body {
   height: 50px;
   width: 300px;
   font-weight: 600;
+  word-spacing: 1px;
+  letter-spacing: 1px;
   justify-self: center;
   align-self: start;
   display: flex;
@@ -74,10 +82,14 @@ body {
   background-color: inherit;
   border: 3px solid var(--secondary);
   border-radius: 3px;
+  transition-duration: 0.4s;
 }
 
-.scroll-icon {
-  height: 25px;
+.title-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 40px var(--secondary);
+  text-shadow: 0 0 20px var(--secondary);
+  transition-duration: 0.4s;
 }
 
 /* FOOTER */
@@ -91,7 +103,14 @@ body {
   grid-template-columns: repeat(4, 80px);
 }
 
-.social-icon {
-  height: 40px;
-  margin: 20px;
+.s-icon {
+  color: var(--lblue);
+  transition-duration: 0.4s;
+}
+
+.s-icon:hover {
+  cursor: pointer;
+  color: var(--grey);
+  text-shadow: 0 0 10px var(--grey);
+  transition-duration: 0.4s;
 }
