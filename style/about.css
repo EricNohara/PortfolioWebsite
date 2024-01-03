@@ -6,6 +6,7 @@
   --mblue: #415a77;
   --lblue: #778da9;
   --grey: #e0e1dd;
+  --txtgrey: #c7c8c5;
   --dgrey: #152130;
   --secondary: #ec2d47;
 }
@@ -14,13 +15,13 @@
   background-image: radial-gradient(circle, var(--dblue) 0%, var(--black) 100%);
   width: 100vw;
   height: 150vh;
-  color: var(--grey);
+  color: var(--txtgrey);
 }
 
 #abt-article {
   display: grid;
   grid-template-columns: repeat(3, 30vw);
-  grid-template-rows: auto;
+  grid-template-rows: 28vw 40vh;
 }
 
 .article-wrapper {
@@ -72,21 +73,32 @@
 .name {
   letter-spacing: 1px;
   margin-bottom: 10px;
-  margin: 5px 0 5px 10px;
+  margin: 0.5vw 0 0.5vw 1vw;
+  font-size: 2.7vw;
 }
 
 .description {
-  font-weight: 400;
-  margin: 10px 0 0 10px;
+  font-weight: 300;
+  margin: 0 0 0 1vw;
+  font-size: 1.6vw;
+  line-height: 2.2vw;
 }
 
 .txt {
-  margin: 10px 15px 10px 15px;
-  font-size: 17px;
-  /* font-weight: 300; */
-  line-height: 25px;
+  font-size: 1.3vw;
+  line-height: 2.2vw;
+}
+
+.aboutme {
+  padding: 0.75vw 1vw 0.75vw 1vw;
 }
 
 b {
   transition-duration: 0.4s;
+  color: white;
+}
+
+#box3 {
+  grid-column: 3/4;
+  grid-row: 1/4;
 }
