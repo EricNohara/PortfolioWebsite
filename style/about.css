@@ -281,13 +281,14 @@ b {
   font-weight: 600;
 }
 
-.front-title {
+.flip-title {
   text-align: center;
   margin: 1.5vw;
 }
 
 .rotate-icon {
-  margin-left: 25vw;
+  position: fixed;
+  right: 3%;
 }
 
 .education-grid {
@@ -305,4 +306,18 @@ b {
 
 .relavent-course b {
   grid-column: 1 / 3;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 1.5vw;
+  gap: 0.5vw;
+  margin: 0 10% 0 10%;
+  font-weight: 300;
+}
+
+.job-grid {
+  display: grid;
+  gap: 1vw;
 }
