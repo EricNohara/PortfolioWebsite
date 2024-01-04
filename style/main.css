@@ -21,6 +21,10 @@ body {
   --dsecondary: #390b11;
 }
 
+.hidden {
+  display: none;
+}
+
 ::-webkit-scrollbar {
   width: 0;
 }
