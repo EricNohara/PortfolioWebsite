@@ -9,6 +9,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --black: #000000;
   --bblue: #04080d;
