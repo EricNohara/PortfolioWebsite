@@ -197,12 +197,12 @@ b {
 #status:hover {
   background-color: var(--dsecondary);
   color: transparent;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #status:hover .hire-now {
   color: var(--grey);
   text-shadow: 0 0 20px white;
-  transition-delay: 0.7s;
-  transition-duration: 1s;
+  transition-delay: 0.3s;
+  transition-duration: 0.5s;
 }

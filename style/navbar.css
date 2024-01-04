@@ -11,8 +11,8 @@
 }
 
 #navbar {
-  background-color: var(--dgrey);
-  box-shadow: 0 0 20px var(--dgrey);
+  background-color: #333333;
+  box-shadow: 0 0 20px var(--dblue);
   display: flex;
   justify-content: center;
   align-items: center;
