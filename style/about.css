@@ -50,6 +50,17 @@
   border-radius: 10px;
   align-self: center;
   justify-content: center;
+  animation: glow-animate 3s linear infinite;
+}
+
+@keyframes glow-animate {
+  0%,
+  100% {
+    box-shadow: 0 0 10px var(--secondary);
+  }
+  50% {
+    box-shadow: 0 0 30px var(--secondary);
+  }
 }
 
 #box2 {
