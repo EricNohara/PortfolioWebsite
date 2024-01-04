@@ -14,9 +14,14 @@
 }
 
 #about-page {
-  background-image: radial-gradient(circle, var(--dblue) 0%, var(--black) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--black) 0%,
+    var(--black) 85%,
+    var(--dblue) 100%
+  );
   width: 100vw;
-  height: 180vh;
+  height: 100vw;
   color: var(--txtgrey);
 }
 
