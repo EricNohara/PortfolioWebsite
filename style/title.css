@@ -10,7 +10,7 @@
 }
 
 /* TITLE PAGE STYLING */
-.title-page {
+#title-page {
   height: 100vh;
   width: 100vw;
   display: grid;

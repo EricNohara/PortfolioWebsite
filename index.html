@@ -21,7 +21,7 @@
     <div id="progressbar"></div>
     <div id="scrollpath"></div>
     <!-- TITLE PAGE, SCROLL TO VIEW REST OF PORTFOLIO -->
-    <div class="title-page">
+    <div id="title-page">
       <header class="title-header">
         <h1 class="title-txt txt1">Hey, I'm<p class="eric">Eric</p>.</h1>
         <h1 class="title-txt txt2">I'm a web developer and college student.</h1>
@@ -40,15 +40,15 @@
 
     <!-- NAVBAR WHICH ATTACHES TO TOP OF SCREEN WHEN SCROLL -->
     <nav class="attached" id="navbar" data-cur-page="home">
-      <p class="nav home-btn">Home</p>
-      <p class="nav abt-btn">About</p>
-      <p class="nav projects-btn">Projects</p>
-      <p class="nav contact-btn">Contact</p>
-      <p class="nav resume-btn">Resume</p>
+      <a href="#title-page" class="nav home-btn">Home</a>
+      <a href="#about-page" class="nav abt-btn">About</a>
+      <a href="#projects-page" class="nav projects-btn">Projects</a>
+      <a href="contact-page" class="nav contact-btn">Contact</a>
+      <a href="./assets/files/FINAL RESUME FALL 2023.pdf" class="nav resume-btn" target="_blank" rel="noreferrer noopener">Resume</a>
     </nav>
 
     <!-- ABOUT PAGE -->
-    <div class="about-page">
+    <div id="about-page">
       <h1 class="abt-title">About Me</h1>
       <div class="article-wrapper">
         <article id="abt-article">
@@ -93,7 +93,7 @@
     
     
     <!-- PROJECTS PAGE -->
-    <div class="projects-page">
+    <div id="projects-page">
       <header>
         <h1 class="projects-header">Projects</h1>
       </header>
