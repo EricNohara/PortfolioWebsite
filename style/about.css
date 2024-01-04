@@ -55,6 +55,12 @@
   justify-content: center;
   transform: scaleX(-1);
   box-shadow: 0 0 10px var(--mblue);
+  transition-duration: 0.4s;
+}
+
+#portrait:hover {
+  box-shadow: 0 0 40px var(--mblue);
+  transition-duration: 0.4s;
 }
 
 #box2 {
@@ -71,12 +77,24 @@
   border-radius: 10px;
   margin-bottom: 2vw;
   box-shadow: 0 0 10px var(--mblue);
+  transition-duration: 0.4s;
+}
+
+#info:hover {
+  box-shadow: 0 0 40px var(--mblue);
+  transition-duration: 0.4s;
 }
 
 #message {
   background-color: var(--dblue);
   border-radius: 10px;
   box-shadow: 0 0 10px var(--mblue);
+  transition-duration: 0.4s;
+}
+
+#message:hover {
+  box-shadow: 0 0 40px var(--mblue);
+  transition-duration: 0.4s;
 }
 
 .name {
@@ -119,6 +137,12 @@ b {
   border-radius: 10px;
   box-shadow: 0 0 10px var(--mblue);
   margin-right: 1.5vw;
+  transition-duration: 0.4s;
+}
+
+#box3:hover {
+  box-shadow: 0 0 40px var(--mblue);
+  transition-duration: 0.4s;
 }
 
 .tech-stack {
@@ -171,6 +195,12 @@ b {
 
 #experience {
   border-radius: 10px;
+}
+
+#experience:hover {
+  box-shadow: 0 0 40px var(--mblue);
+  transition-duration: 0.4s;
+  transition-delay: 0.7s;
 }
 
 #status {
