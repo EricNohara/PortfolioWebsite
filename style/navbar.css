@@ -18,6 +18,9 @@
   align-items: center;
   height: 50px;
   width: 100vw;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 
 .nav {
