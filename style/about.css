@@ -14,7 +14,7 @@
 .about-page {
   background-image: radial-gradient(circle, var(--dblue) 0%, var(--black) 100%);
   width: 100vw;
-  height: 150vh;
+  height: 160vh;
   color: var(--txtgrey);
 }
 
@@ -105,20 +105,40 @@ b {
   border-radius: 10px;
 }
 
+.tech-stack {
+  display: grid;
+  grid-template-rows: 5vw 63vw;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-rows: repeat(12, 4.75vw);
+  gap: 0.5vw;
+}
+
 .stack-title {
-  text-align: center;
   font-size: 2.7vw;
-  margin: 2vw 0 2vw 1vw;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  margin: 0 0 2.2vw 2.2vw;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
 }
 
 .tech-icon {
-  margin-right: 3vw;
+  font-size: 3.75vw;
+  margin-left: 2vw;
+}
+
+.grid-cell {
+  border-radius: 10px;
+  display: grid;
+  font-size: 1.1vw;
+  grid-template-columns: 8vw 20vw;
+  align-items: center;
+  transition-duration: 0.2s;
+}
+
+.grid-cell:hover {
+  border: 2px solid var(--secondary);
+  box-shadow: 0 0 20px var(--secondary);
+  transition-duration: 0.3s;
 }
