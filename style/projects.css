@@ -30,18 +30,34 @@
   font-weight: 300;
   letter-spacing: 2px;
   word-spacing: 2px;
-  text-align: center;
-  padding: 80px 0 40px 0;
+  padding: 80px 0 20px 0;
+  margin-left: 4vw;
 }
 
-.projects-scroll {
-  color: var(--txtgrey);
-  font-size: 4vw;
+.projects-sub {
+  font-weight: 200;
+  font-size: 20px;
+  margin-bottom: 10vw;
+  margin-left: 4vw;
+}
+
+#project-names > li {
+  color: var(--grey);
+  font-size: 3.6vw;
   font-weight: 200;
   text-align: end;
   letter-spacing: 2px;
+  margin-right: 4vw;
+  padding: 1vw;
 }
 
-.projects-scroll a {
+#project-names > li > a {
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.dropdown > li > a {
   color: var(--txtgrey);
+  font-size: 3vw;
+  padding: 0.5vw;
 }

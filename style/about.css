@@ -127,7 +127,7 @@
 }
 
 .aboutme {
-  padding: 1vw 2vw 1vw 2vw;
+  padding: 2vw 3vw 2vw 3vw;
 }
 
 b {
@@ -336,7 +336,7 @@ b {
   display: grid;
   font-size: 1.3vw;
   gap: 0.5vw;
-  margin-left: 3vw;
+  margin: 0 10% 0 10%;
 }
 
 .relavent-course {
