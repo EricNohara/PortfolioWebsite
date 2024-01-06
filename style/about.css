@@ -21,7 +21,7 @@
     var(--dblue) 100%
   );
   width: 100vw;
-  height: 100vw;
+  height: 110vw;
   color: var(--txtgrey);
 }
 
@@ -38,13 +38,14 @@
 }
 
 .abt-title {
-  font-size: 50px;
+  font-size: 6vw;
   letter-spacing: 2px;
   word-spacing: 2px;
   text-align: center;
-  padding: 80px 0 40px 0;
+  padding: 10vw 0 7vw 0;
   font-weight: 300;
   color: var(--grey);
+  text-transform: uppercase;
 }
 
 #box1 {
@@ -172,6 +173,7 @@ b {
   align-self: center;
   color: var(--grey);
   font-weight: 300;
+  letter-spacing: 1px;
 }
 
 .tech-icon {
@@ -325,6 +327,7 @@ b {
 .flip-title {
   text-align: center;
   margin: 1.5vw;
+  letter-spacing: 1px;
 }
 
 .rotate-icon {
