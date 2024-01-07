@@ -81,7 +81,7 @@
 }
 
 #info {
-  background-color: var(--dblue);
+  background-color: var(--dblue2);
   border-radius: 10px;
   margin-bottom: 2vw;
   box-shadow: 0 0 10px var(--mblue);
@@ -300,7 +300,7 @@ b {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: var(--dblue);
+  background-color: var(--dblue2);
   border-radius: 10px;
   box-shadow: 0 0 10px var(--mblue);
   font-weight: 300;

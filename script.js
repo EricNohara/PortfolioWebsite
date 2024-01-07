@@ -14,3 +14,11 @@ opener.forEach((el) =>
     e.target.nextElementSibling.classList.toggle("hidden");
   })
 );
+
+// CODE FOR OVERLAY
+let exitBtn = document.getElementById("exit-icon");
+
+exitBtn.addEventListener("click", (e) => {
+  console.log(e.target.parentElement);
+  e.target.parentElement.classList.add("hidden");
+});
