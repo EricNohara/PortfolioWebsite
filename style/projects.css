@@ -139,6 +139,7 @@
   font-size: 1.5vw;
   font-weight: 300;
   margin-bottom: 1.5vw;
+  font-style: italic;
 }
 
 .date {
@@ -174,4 +175,8 @@
 
 #project-2 > h1 {
   font-size: 4.25vw;
+}
+
+#project-3 > h1 {
+  font-size: 3.8vw;
 }
