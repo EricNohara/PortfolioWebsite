@@ -27,6 +27,7 @@ exitBtn.addEventListener("click", (e) => {
 });
 
 projNamesList.addEventListener("click", (e) => {
+  if (e.target.tagName.toLowerCase() !== "p") return;
   if (e.target.classList[0] !== "opener") {
     const overlayContent = document.getElementById(
       e.target.dataset.projectName
