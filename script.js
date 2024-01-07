@@ -1,14 +1,14 @@
 // SCROLLBAR TEMP CODE
-let progress = document.getElementById("progressbar");
-let totalHeight = document.body.scrollHeight - window.innerHeight;
+const progress = document.getElementById("progressbar");
+const totalHeight = document.body.scrollHeight - window.innerHeight;
 
 window.onscroll = function () {
-  let progHeight = (window.scrollY / totalHeight) * 100;
+  const progHeight = (window.scrollY / totalHeight) * 100;
   progress.style.height = progHeight + "%";
 };
 
 // CODE FOR OPENING THE DROPDOWNS
-let opener = document.querySelectorAll(".opener");
+const opener = document.querySelectorAll(".opener");
 opener.forEach((el) =>
   el.addEventListener("click", (e) => {
     e.target.nextElementSibling.classList.toggle("hidden");
@@ -16,9 +16,22 @@ opener.forEach((el) =>
 );
 
 // CODE FOR OVERLAY
-let exitBtn = document.getElementById("exit-icon");
+const exitBtn = document.getElementById("exit-icon");
+const projNamesList = document.getElementById("list");
+const overlayScreen = document.querySelector(".overlay-screen");
+const projects = document.querySelectorAll(".project");
 
 exitBtn.addEventListener("click", (e) => {
-  console.log(e.target.parentElement);
   e.target.parentElement.classList.add("hidden");
+  projects.forEach((el) => el.classList.add("hidden"));
+});
+
+projNamesList.addEventListener("click", (e) => {
+  if (e.target.classList[0] !== "opener") {
+    const overlayContent = document.getElementById(
+      e.target.dataset.projectName
+    );
+    overlayScreen.classList.remove("hidden");
+    overlayContent.classList.remove("hidden");
+  }
 });
