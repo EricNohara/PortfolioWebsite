@@ -51,7 +51,7 @@
   font-weight: 200;
   text-align: end;
   letter-spacing: 2px;
-  margin-right: 2vw;
+  margin-right: 4vw;
   padding: 1vw;
 }
 
@@ -60,9 +60,9 @@
   cursor: pointer;
 }
 
-.dropdown > li > a {
+.dropdown > li > p {
   color: var(--txtgrey);
-  font-size: 3.2vw;
+  font-size: 3vw;
   padding: 0.5vw;
 }
 
@@ -71,7 +71,7 @@
   margin-right: 2vw;
   text-shadow: 0 0 20px var(--secondary);
   color: var(--secondary);
-  font-weight: 400;
+  font-weight: 300;
   transition: margin-right 0.6s, text-shadow 0.6s;
 }
 
@@ -176,11 +176,6 @@
   width: 45vw;
 }
 
-#c-calc-img {
-  -webkit-filter: invert(1);
-  filter: invert(1);
-}
-
 #taskhub-img {
   height: 20vw;
 }
@@ -191,4 +186,8 @@
 
 #project-3 > h1 {
   font-size: 3.8vw;
+}
+
+#project-6 > h1 {
+  font-size: 4vw;
 }
