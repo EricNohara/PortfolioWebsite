@@ -1,11 +1,38 @@
 // SCROLLBAR TEMP CODE
 const progress = document.getElementById("progressbar");
-const totalHeight = document.body.scrollHeight - window.innerHeight;
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+window.onresize = () =>
+  (totalHeight = document.body.scrollHeight - window.innerHeight);
 
 window.onscroll = function () {
   const progHeight = (window.scrollY / totalHeight) * 100;
   progress.style.height = progHeight + "%";
 };
+
+// CODE FOR NAVBAR TEST
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Get the current page pathname
+//   var currentPage = window.location.pathname;
+
+//   function highlightNavLink() {
+//     let currentSection = null;
+
+//     // Find the section currently in the viewport
+//     document.querySelectorAll('section').forEach(function(section) {
+//       var rect = section.getBoundingClientRect();
+//       if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+//         currentSection = section.id;
+//       }
+//     });
+
+//     if (currentSection) {
+//       var activeLink = document.querySelector('nav a[href="#' + currentSection + '"]');
+//       if (activeLink) {
+//         activeLink.classList.add('active');
+//       }
+//     }
+// };
 
 // CODE FOR OPENING THE DROPDOWNS
 const opener = document.querySelectorAll(".opener");
