@@ -99,3 +99,10 @@ a:link {
 .hidden {
   display: none !important;
 }
+
+.overlay-hidden {
+  opacity: 0 !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+  transition-duration: 0.8s;
+}

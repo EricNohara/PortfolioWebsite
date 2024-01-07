@@ -22,8 +22,8 @@ const overlayScreen = document.querySelector(".overlay-screen");
 const projects = document.querySelectorAll(".project");
 
 exitBtn.addEventListener("click", (e) => {
-  e.target.parentElement.classList.add("hidden");
-  projects.forEach((el) => el.classList.add("hidden"));
+  e.target.parentElement.classList.add("overlay-hidden");
+  projects.forEach((el) => el.classList.add("overlay-hidden"));
 });
 
 projNamesList.addEventListener("click", (e) => {
@@ -31,7 +31,7 @@ projNamesList.addEventListener("click", (e) => {
     const overlayContent = document.getElementById(
       e.target.dataset.projectName
     );
-    overlayScreen.classList.remove("hidden");
-    overlayContent.classList.remove("hidden");
+    overlayScreen.classList.remove("overlay-hidden");
+    overlayContent.classList.remove("overlay-hidden");
   }
 });
