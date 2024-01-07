@@ -96,7 +96,7 @@
   display: grid;
   grid-template-rows: 15% 85%;
   z-index: 9999;
-  transition-duration: 0.8s;
+  transition: opacity 0.8s;
 }
 
 #exit-icon {
