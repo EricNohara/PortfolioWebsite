@@ -147,7 +147,7 @@
 }
 
 .proj-desc-txt {
-  color: var(--txtgrey);
+  color: var(--grey);
   font-size: 1.25vw;
   letter-spacing: 1px;
   font-weight: 200;
@@ -186,4 +186,23 @@
 
 #project-6 > h1 {
   font-size: 4vw;
+}
+
+.click-msg {
+  color: rgb(84, 84, 84);
+  opacity: 0;
+  pointer-events: none;
+  font-weight: 300;
+  font-size: 1.4vw;
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  transition-duration: 0.5s;
+}
+
+#project-descriptions img:hover + .click-msg {
+  color: var(--txtgrey);
+  opacity: 100%;
+  left: 15%;
+  pointer-events: all;
 }
