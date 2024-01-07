@@ -163,11 +163,26 @@
   margin-bottom: 1.5vw;
   border-radius: 10px;
   width: 45vw;
+  transition-duration: 0.4s;
+}
+
+#project-descriptions img:hover {
+  filter: brightness(75%);
+  transform: translateY(2px);
+  transition-duration: 0.4s;
+}
+
+.img-link {
+  width: 45vw;
 }
 
 #c-calc-img {
   -webkit-filter: invert(1);
   filter: invert(1);
+}
+
+#taskhub-img {
+  height: 20vw;
 }
 
 #project-2 > h1 {
