@@ -21,7 +21,7 @@
     var(--dblue) 100%
   );
   width: 100vw;
-  height: 100vw;
+  height: 90vw;
   color: var(--txtgrey);
 }
 
@@ -44,7 +44,7 @@
 
 .abt-title {
   text-align: center;
-  padding: 8vw 0 1vw 0;
+  padding: 6vw 0 1vw 0;
 }
 
 #box1 {
