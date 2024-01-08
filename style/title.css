@@ -14,10 +14,18 @@
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: 60vh 10vh 10vh 20vh;
+  grid-template-rows: 60vh 20vh 20vh;
   align-items: center;
   justify-content: center;
   background-image: radial-gradient(circle, var(--dblue) 0%, var(--black) 100%);
+}
+
+#title-background {
+  position: absolute;
+}
+
+#title-background canvas {
+  z-index: -1 !important;
 }
 
 .title-header {
@@ -26,6 +34,7 @@
   text-align: center;
   color: var(--grey);
   align-self: end;
+  grid-row: 1/2;
 }
 
 .txt1 {
@@ -48,10 +57,6 @@
 .eric:hover {
   text-shadow: 0 0 40px var(--secondary);
   transition-duration: 0.4s;
-}
-
-#portrait {
-  height: 200px;
 }
 
 /* ABOUT ME BUTTON */
@@ -102,13 +107,21 @@
   color: var(--secondary);
   justify-self: center;
   align-self: self-start;
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+.scroll-msg {
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: self-start;
+  text-align: center;
 }
 
 /* FOOTER */
 .socials {
   display: flex;
   justify-content: center;
+  grid-row: 3/4;
 }
 
 .socials-grid {
