@@ -33,21 +33,23 @@
   letter-spacing: 2px;
   word-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
 }
 
 #contact-sub {
   font-weight: 200;
   font-size: 2vw;
   text-transform: lowercase;
+  margin-bottom: 1vw;
 }
 
 hr {
   height: 10px;
-  width: 75%;
+  width: 60%;
   border-radius: 10px;
   border: none;
   margin: auto;
+  margin-bottom: 3vw;
   background-image: linear-gradient(var(--ddsecondary), var(--secondary));
 }
 
@@ -94,4 +96,49 @@ hr {
 
 #input-send {
   border-radius: 20px;
+  background-color: inherit;
+  color: var(--secondary);
+  border: 3px solid var(--secondary);
+  font-size: 1.5vw;
+  font-weight: 200;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#input-send:hover {
+  background-color: var(--secondary);
+  color: var(--txtgrey);
+  box-shadow: 0 0 20px var(--secondary);
+  transition-duration: 0.4s;
+}
+
+.info-link {
+  font-size: 1.75vw;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: var(--txtgrey);
+  transition-duration: 0.2s;
+}
+
+.info-link:hover {
+  color: var(--secondary);
+  transform: translateY(2px);
+  text-shadow: 0 0 20px var(--secondary);
+  transition-duration: 0.2s;
+}
+
+.contact-icon {
+  margin-right: 2vw;
+}
+
+#info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-info {
+  display: grid;
+  grid-template-columns: 25vw 25vw;
 }
