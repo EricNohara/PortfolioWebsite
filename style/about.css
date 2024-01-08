@@ -43,14 +43,8 @@
 }
 
 .abt-title {
-  font-size: 6vw;
-  letter-spacing: 2px;
-  word-spacing: 2px;
   text-align: center;
   padding: 8vw 0 1vw 0;
-  font-weight: 300;
-  color: var(--grey);
-  text-transform: uppercase;
 }
 
 #box1 {
