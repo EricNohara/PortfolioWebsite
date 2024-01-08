@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/about.css">
     <link rel="stylesheet" href="./style/projects.css">
+    <link rel="stylesheet" href="./style/contact.css">
     <script src="https://kit.fontawesome.com/61739c9a9f.js" crossorigin="anonymous"></script>
   </head>
 
@@ -273,8 +274,19 @@
 
     <section id="contact-page">
       <header>
-        <h1 class="contact-header">Contact</h1>
+        <h1 id="contact-header">Contact</h1>
+        <h3 id="contact-sub">Have any questions? Send me a message and I'll get back to you as soon as possible.</h3>
       </header>
+      <hr>
+      <p class="email-info"><i class="fa-regular fa-paper-plane"></i>ernohara@bu.edu</p>
+      <p class="phone-info"><i class="fa-solid fa-phone"></i>+1-(636)-317-9533</p>
+      <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+        <input type="hidden" name="access_key" value="997fb157-8f8f-4d0b-8bcb-621586433a59">
+        <input type="text" name="name" placeholder="Your Name Here" class="contact-input" required>
+        <input type="email" name="email" placeholder="Your Email Here" class="contact-input" required>
+        <textarea name="message" id="input-msg" placeholder="Your Message Here" class="contact-input" required></textarea>
+        <button type="submit" id="input-send">Send</button>
+      </form>
     </section>
 
   </body>

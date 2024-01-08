@@ -14,13 +14,13 @@
 
 #projects-page {
   width: 100vw;
-  height: 85vw;
+  height: 80vw;
   color: var(--txtgrey);
   background-image: linear-gradient(
     to bottom,
     var(--dblue) 0%,
     var(--dblue) 15%,
-    var(--black) 25%,
+    var(--black) 40%,
     var(--black) 100%
   );
   position: relative;
@@ -38,7 +38,7 @@
 .projects-sub {
   font-weight: 200;
   font-size: 2vw;
-  margin-bottom: 8vw;
+  margin-bottom: 6vw;
   margin-left: 4vw;
   text-transform: lowercase;
 }
