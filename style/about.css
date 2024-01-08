@@ -20,21 +20,22 @@
     var(--black) 65%,
     var(--dblue) 100%
   );
-  width: 100vw;
-  height: 90vw;
+  height: 180svh;
   color: var(--txtgrey);
 }
 
 #about-page > hr {
-  margin-bottom: 4vw;
+  margin-bottom: 3em;
   width: 35%;
 }
 
 #abt-article {
   display: grid;
-  grid-template-columns: repeat(3, 31vw);
-  grid-template-rows: 28vw 40vw;
-  grid-template-rows: 29vw 41vw;
+  /* grid-template-columns: repeat(3, 31vw);
+  grid-template-rows: 29vw 41vw; */
+  grid-template-columns: repeat(3, 20em);
+  grid-template-rows: 20em 25em;
+  gap: 1.5em;
 }
 
 .article-wrapper {
@@ -44,7 +45,7 @@
 
 .abt-title {
   text-align: center;
-  padding: 6vw 0 1vw 0;
+  padding: 1em 0 0.25em 0;
 }
 
 #box1 {
@@ -55,7 +56,7 @@
 }
 
 #portrait {
-  width: 29vw;
+  width: 20em;
   height: auto;
   border-radius: 20px;
   align-self: center;
@@ -75,14 +76,12 @@
   grid-column: 2/3;
   display: grid;
   grid-template-rows: 40% 60%;
-  margin-right: 2vw;
-  margin-left: 1vw;
 }
 
 #info {
   background-color: var(--dblue2);
   border-radius: 20px;
-  margin-bottom: 2vw;
+  margin-bottom: 1.5em;
   box-shadow: 0 0 10px var(--mblue);
   transition-duration: 0.4s;
 }
@@ -106,8 +105,8 @@
 
 .name {
   letter-spacing: 1px;
-  margin: 1vw 0 0 2vw;
-  font-size: 2.5vw;
+  margin: 0.5rem 0 0 1rem;
+  font-size: 1.8rem;
   color: var(--grey);
   font-weight: 300;
 }
@@ -115,9 +114,9 @@
 .description {
   font-weight: 200;
   font-style: italic;
-  margin: 0.3vw 0 0 2vw;
-  font-size: 1.5vw;
-  line-height: 2.2vw;
+  margin: 0.15rem 0 0 1rem;
+  font-size: 1.15rem;
+  line-height: 1.6rem;
 }
 
 .txt {
