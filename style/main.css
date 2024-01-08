@@ -105,3 +105,13 @@ a:link {
   z-index: -1 !important;
   pointer-events: none !important;
 }
+
+hr {
+  height: 0.9vw;
+  width: 60%;
+  border-radius: 10px;
+  border: none;
+  margin: auto;
+  margin-bottom: 3vw;
+  background-image: linear-gradient(var(--ddsecondary), var(--secondary));
+}

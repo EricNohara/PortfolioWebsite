@@ -38,9 +38,14 @@
 .projects-sub {
   font-weight: 200;
   font-size: 2vw;
-  margin-bottom: 6vw;
+  margin-bottom: 1.5vw;
   margin-left: 4vw;
   text-transform: lowercase;
+}
+
+#projects-page hr {
+  margin-left: 2.5vw;
+  width: 62vw;
 }
 
 #project-names > li {

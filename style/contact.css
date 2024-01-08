@@ -43,16 +43,6 @@
   margin-bottom: 1vw;
 }
 
-hr {
-  height: 10px;
-  width: 60%;
-  border-radius: 10px;
-  border: none;
-  margin: auto;
-  margin-bottom: 3vw;
-  background-image: linear-gradient(var(--ddsecondary), var(--secondary));
-}
-
 #contact-form {
   display: grid;
   height: 40vw;
@@ -60,6 +50,10 @@ hr {
   margin: auto;
   grid-template-rows: 4vw 4vw 18vw 4vw;
   gap: 2vw;
+}
+
+#contact-page hr {
+  width: 55%;
 }
 
 .contact-input {
