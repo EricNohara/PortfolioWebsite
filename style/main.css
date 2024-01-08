@@ -5,7 +5,6 @@
 }
 
 body {
-  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
 }
 
@@ -110,17 +109,17 @@ a:link {
 }
 
 hr {
-  height: 0.75vw;
+  height: clamp(0.2rem, 0.75svw, 0.8rem);
   width: 60%;
   border-radius: 10px;
   border: none;
   margin: auto;
-  margin-bottom: 3vw;
+  margin-bottom: 2em;
   background-image: linear-gradient(var(--ddsecondary), var(--secondary));
 }
 
 .page-header {
-  font-size: 5vw;
+  font-size: clamp(3rem, 4.5svw + 1rem, 6rem);
   font-weight: 300;
   letter-spacing: 2px;
   word-spacing: 2px;
@@ -129,7 +128,7 @@ hr {
 
 .subtxt {
   font-weight: 200;
-  font-size: 1.5vw;
+  font-size: clamp(0.75rem, 1.5svw, 1.25rem);
   text-transform: lowercase;
   color: var(--txtgrey);
 }
