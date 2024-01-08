@@ -14,7 +14,7 @@
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: 60vh 20vh 20vh;
+  grid-template-rows: 60vh 10vh 10vh 20vh;
   align-items: center;
   justify-content: center;
   background-image: radial-gradient(circle, var(--dblue) 0%, var(--black) 100%);
@@ -55,7 +55,7 @@
 }
 
 /* ABOUT ME BUTTON */
-.title-btn {
+#title-btn {
   height: 50px;
   width: 300px;
   font-weight: 500;
@@ -74,11 +74,34 @@
   transition-duration: 0.4s;
 }
 
-.title-btn:hover {
+#title-btn:hover {
   cursor: pointer;
   box-shadow: 0 0 40px var(--secondary);
   text-shadow: 0 0 20px var(--secondary);
   transition-duration: 0.4s;
+}
+
+.title-btn:hover + #down-icon {
+  opacity: 100%;
+  animation: title-animation 1.25s ease-in-out infinite;
+}
+
+@keyframes title-animation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+}
+
+#down-icon {
+  opacity: 0;
+  color: var(--secondary);
+  justify-self: center;
+  align-self: self-start;
+  margin-top: 10px;
 }
 
 /* FOOTER */
