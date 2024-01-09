@@ -20,13 +20,27 @@ const homeBtn = document.querySelector(".home-btn");
 const abtBtn = document.querySelector(".abt-btn");
 const projectsBtn = document.querySelector(".projects-btn");
 const contactBtn = document.querySelector(".contact-btn");
-
+const resumeBtn = document.querySelector(".resume-btn");
 const pages = [
   [titlePage, homeBtn],
   [abtPage, abtBtn],
   [projPage, projectsBtn],
   [contactPage, contactBtn],
 ];
+
+const navBar = document.getElementById("navbar");
+
+navBar.addEventListener("click", (e) => {
+  const clickedBtn = e.target;
+  [...clickedBtn.parentElement.children].slice(0, 4).forEach((btn) => {
+    if (btn.classList.contains("active")) btn.classList.remove("active");
+    btn.dataset.clicked = "false";
+  });
+  if (clickedBtn !== resumeBtn) {
+    clickedBtn.classList.add("active");
+    clickedBtn.dataset.clicked = "true";
+  }
+});
 
 window.addEventListener("scroll", () => {
   const scrollPos = window.scrollY + 50;
@@ -36,7 +50,11 @@ window.addEventListener("scroll", () => {
       scrollPos < page[0].offsetTop + page[0].offsetHeight;
     if (!page[1].classList.contains("active") && isVisible)
       page[1].classList.add("active");
-    else if (page[1].classList.contains("active") && !isVisible)
+    else if (
+      page[1].classList.contains("active") &&
+      !isVisible &&
+      page[1].dataset.clicked === "false"
+    )
       page[1].classList.remove("active");
   });
 });
