@@ -139,7 +139,6 @@ hr {
   filter: blur(5px);
   padding-left: 20em;
   padding-right: 20em;
-  /* transform: translateX(100%); */
   transition: all 1s;
 }
 

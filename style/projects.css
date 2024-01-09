@@ -91,7 +91,7 @@
   opacity: 95%;
   display: grid;
   grid-template-rows: 15% 85%;
-  z-index: 9999;
+  z-index: 9999 !important;
   transition: opacity 0.8s;
 }
 

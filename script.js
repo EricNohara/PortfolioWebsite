@@ -76,16 +76,17 @@ const projects = document.querySelectorAll(".project");
 exitBtn.addEventListener("click", (e) => {
   e.target.parentElement.classList.add("overlay-hidden");
   projects.forEach((el) => el.classList.add("overlay-hidden"));
+  navBar.classList.remove("overlay-hidden");
 });
 
 projNamesList.addEventListener("click", (e) => {
-  if (e.target.tagName.toLowerCase() !== "p") return;
-  if (e.target.classList[0] !== "opener") {
-    const overlayContent = document.getElementById(
-      e.target.dataset.projectName
-    );
+  const project = e.target;
+  if (project.tagName.toLowerCase() !== "p") return;
+  if (project.classList[0] !== "opener") {
+    const overlayContent = document.getElementById(project.dataset.projectName);
     overlayScreen.classList.remove("overlay-hidden");
     overlayContent.classList.remove("overlay-hidden");
+    navBar.classList.add("overlay-hidden");
   }
 });
 

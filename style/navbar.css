@@ -20,8 +20,9 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  z-index: 9998;
+  z-index: 9990 !important;
   opacity: 97.5%;
+  transition-duration: 0.5s;
 }
 
 .nav {
