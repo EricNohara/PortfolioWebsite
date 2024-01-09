@@ -35,7 +35,6 @@
 
 #projects-page hr {
   margin-left: 2rem;
-  /* width: 28rem; */
   margin-bottom: 1rem;
 }
 
@@ -166,6 +165,10 @@
 
 .img-link {
   width: 36rem;
+}
+
+#project-1 > h1 {
+  font-size: 3.5rem;
 }
 
 #project-2 > h1 {
