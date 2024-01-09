@@ -1,4 +1,4 @@
-// SCROLLBAR TEMP CODE
+// SCROLLBAR CODE
 const progress = document.getElementById("progressbar");
 let totalHeight = document.body.scrollHeight - window.innerHeight;
 
@@ -10,7 +10,7 @@ window.onscroll = function () {
   progress.style.height = progHeight + "%";
 };
 
-// CODE FOR NAVBAR TEST
+// CODE FOR NAVBAR
 const titlePage = document.getElementById("title-page");
 const abtPage = document.getElementById("about-page");
 const projPage = document.getElementById("projects-page");
@@ -88,3 +88,15 @@ projNamesList.addEventListener("click", (e) => {
     overlayContent.classList.remove("overlay-hidden");
   }
 });
+
+//CODE FOR SCROLL ANIMATION
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) entry.target.classList.add("scroll-show");
+    else entry.target.classList.remove("scroll-show");
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".scroll-hidden");
+hiddenElements.forEach((el) => observer.observe(el));

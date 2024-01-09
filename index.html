@@ -6,7 +6,7 @@
     <meta name="title" content="Eric Nohara-LeClair | Web Developer | Software Engineer">
     <meta name="description" content="Current Student of Computer Science at Boston University">
     <title>Eric Nohara-LeClair | Web Developer | Software Engineer</title>
-    <script type="module" src="script.js"></script>
+    <script defer type="module" src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
@@ -55,7 +55,7 @@
     <!-- ABOUT PAGE -->
     <section id="about-page">
       <h1 class="abt-title page-header">About Me</h1>
-      <hr>
+      <hr class="scroll-hidden">
       <div class="article-wrapper">
         <article id="abt-article">
           <div id="box1"><img src="./assets/images/Eric Portrait Square.jpg" alt="Eric Nohara-LeClair Portrait" id="portrait"></div>
@@ -140,7 +140,7 @@
       <header>
         <h1 class="projects-header page-header">Projects</h1>
         <h2 class="projects-sub subtxt">Click Project Name to View Details | Click Project Image to View Project</h2>
-        <hr>
+        <hr class="scroll-hidden">
       </header>
       <section id="list">
         <ul id="project-names">
@@ -288,7 +288,7 @@
           </div>
         </div>
       </header>
-      <hr>
+      <hr class="scroll-hidden">
       <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
         <input type="hidden" name="access_key" value="997fb157-8f8f-4d0b-8bcb-621586433a59">
         <input type="hidden" name="from_name" value="Portfolio Website Contact">
