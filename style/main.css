@@ -120,7 +120,7 @@ hr {
 }
 
 .page-header {
-  font-size: clamp(3rem, 4.5svw + 1rem, 6rem);
+  font-size: 5rem;
   font-weight: 300;
   letter-spacing: 2px;
   word-spacing: 2px;
@@ -129,7 +129,7 @@ hr {
 
 .subtxt {
   font-weight: 200;
-  font-size: clamp(0.75rem, 1.5svw, 1.25rem);
+  font-size: 1.25rem;
   text-transform: lowercase;
   color: var(--txtgrey);
 }
