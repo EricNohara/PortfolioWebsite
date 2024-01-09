@@ -20,7 +20,7 @@
     var(--black) 65%,
     var(--dblue) 100%
   );
-  height: 180svh;
+  /* height: 10em; */
   color: var(--txtgrey);
 }
 
@@ -31,8 +31,6 @@
 
 #abt-article {
   display: grid;
-  /* grid-template-columns: repeat(3, 31vw);
-  grid-template-rows: 29vw 41vw; */
   grid-template-columns: repeat(3, 20em);
   grid-template-rows: 20em 27.5em;
   gap: 1.5em;
@@ -369,11 +367,11 @@ b {
     grid-template-columns: 20em;
     gap: 1.5em;
     grid-template-rows: 20em 20em 51.5em 27.5em;
-    height: 360svh;
+    height: 2050px;
   }
 
   #about-page {
-    height: 400svh;
+    height: 2250px;
   }
 
   #box1 {
