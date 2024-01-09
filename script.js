@@ -32,11 +32,11 @@ const navBar = document.getElementById("navbar");
 
 navBar.addEventListener("click", (e) => {
   const clickedBtn = e.target;
-  [...clickedBtn.parentElement.children].slice(0, 4).forEach((btn) => {
-    if (btn.classList.contains("active")) btn.classList.remove("active");
-    btn.dataset.clicked = "false";
-  });
   if (clickedBtn !== resumeBtn) {
+    [...clickedBtn.parentElement.children].slice(0, 4).forEach((btn) => {
+      if (btn.classList.contains("active")) btn.classList.remove("active");
+      btn.dataset.clicked = "false";
+    });
     clickedBtn.classList.add("active");
     clickedBtn.dataset.clicked = "true";
   }
