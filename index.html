@@ -291,8 +291,10 @@
       <hr>
       <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
         <input type="hidden" name="access_key" value="997fb157-8f8f-4d0b-8bcb-621586433a59">
-        <!-- <input type="hidden" name="redirect" value="#contact-page"> -->
-        <input type="text" name="name" placeholder="Your Name Here" class="contact-input" required>
+        <input type="hidden" name="from_name" value="Portfolio Website Contact">
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <input type="text" name="subject" placeholder="Your Name Here" class="contact-input" required>
+        <input type="hidden" name="subject" value="sent a message">
         <input type="email" name="email" placeholder="Your Email Here" class="contact-input" required>
         <textarea name="message" id="input-msg" placeholder="Your Message Here" class="contact-input" required></textarea>
         <button type="submit" id="input-send">Send</button>
