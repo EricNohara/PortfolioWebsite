@@ -21,6 +21,7 @@
   position: -webkit-sticky;
   top: 0;
   z-index: 9998;
+  opacity: 97.5%;
 }
 
 .nav {
