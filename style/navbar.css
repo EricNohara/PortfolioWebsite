@@ -17,7 +17,6 @@
   justify-content: center;
   align-items: center;
   height: 50px;
-  width: 100vw;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -29,7 +28,7 @@
   font-weight: 300;
   color: white;
   letter-spacing: 1px;
-  margin-right: 40px;
+  margin-right: 2.5%;
   transition-duration: 0.4s;
 }
 
@@ -39,7 +38,7 @@
   color: var(--secondary);
 }
 
-nav[data-cur-page="home"] .home-btn {
+/* nav[data-cur-page="home"] .home-btn {
   color: var(--secondary);
 }
 
@@ -53,4 +52,4 @@ nav[data-cur-page="projects"] .projects-btn {
 
 nav[data-cur-page="contact"] .contact-btn {
   color: var(--secondary);
-}
+} */
