@@ -110,7 +110,7 @@ a:link {
 }
 
 hr {
-  height: clamp(0.2rem, 0.75svw, 0.8rem);
+  height: clamp(0.4rem, 0.75svw, 0.8rem);
   border-radius: 10px;
   border: none;
   margin: auto;
@@ -141,7 +141,7 @@ hr {
 }
 
 @media (prefers-reduced-motion) {
-  .hidden {
+  .scroll-hidden {
     transition: none;
   }
 }
@@ -150,4 +150,10 @@ hr {
   opacity: 1;
   filter: blur(0);
   width: 35em;
+}
+
+@media screen and (max-width: 1100px) {
+  .scroll-show {
+    width: 25em;
+  }
 }
