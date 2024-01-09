@@ -38,18 +38,7 @@
   color: var(--secondary);
 }
 
-/* nav[data-cur-page="home"] .home-btn {
+.active {
   color: var(--secondary);
+  transition-duration: 0.4s;
 }
-
-nav[data-cur-page="about"] .abt-btn {
-  color: var(--secondary);
-}
-
-nav[data-cur-page="projects"] .projects-btn {
-  color: var(--secondary);
-}
-
-nav[data-cur-page="contact"] .contact-btn {
-  color: var(--secondary);
-} */

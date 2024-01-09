@@ -15,7 +15,13 @@
 }
 
 #contact-page {
-  background-image: linear-gradient(var(--black), var(--dblue2));
+  background-image: linear-gradient(
+    to bottom,
+    var(--black) 0%,
+    var(--black) 50%,
+    var(--dblue) 70%,
+    var(--dblue) 100%
+  );
   color: var(--txtgrey);
 }
 

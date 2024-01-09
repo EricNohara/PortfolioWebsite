@@ -11,28 +11,35 @@ window.onscroll = function () {
 };
 
 // CODE FOR NAVBAR TEST
-// document.addEventListener("DOMContentLoaded", function () {
-//   // Get the current page pathname
-//   var currentPage = window.location.pathname;
+const titlePage = document.getElementById("title-page");
+const abtPage = document.getElementById("about-page");
+const projPage = document.getElementById("projects-page");
+const contactPage = document.getElementById("contact-page");
 
-//   function highlightNavLink() {
-//     let currentSection = null;
+const homeBtn = document.querySelector(".home-btn");
+const abtBtn = document.querySelector(".abt-btn");
+const projectsBtn = document.querySelector(".projects-btn");
+const contactBtn = document.querySelector(".contact-btn");
 
-//     // Find the section currently in the viewport
-//     document.querySelectorAll('section').forEach(function(section) {
-//       var rect = section.getBoundingClientRect();
-//       if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-//         currentSection = section.id;
-//       }
-//     });
+const pages = [
+  [titlePage, homeBtn],
+  [abtPage, abtBtn],
+  [projPage, projectsBtn],
+  [contactPage, contactBtn],
+];
 
-//     if (currentSection) {
-//       var activeLink = document.querySelector('nav a[href="#' + currentSection + '"]');
-//       if (activeLink) {
-//         activeLink.classList.add('active');
-//       }
-//     }
-// };
+window.addEventListener("scroll", () => {
+  const scrollPos = window.scrollY + 50;
+  pages.forEach((page) => {
+    const isVisible =
+      scrollPos >= page[0].offsetTop &&
+      scrollPos < page[0].offsetTop + page[0].offsetHeight;
+    if (!page[1].classList.contains("active") && isVisible)
+      page[1].classList.add("active");
+    else if (page[1].classList.contains("active") && !isVisible)
+      page[1].classList.remove("active");
+  });
+});
 
 // CODE FOR OPENING THE DROPDOWNS
 const opener = document.querySelectorAll(".opener");
@@ -63,5 +70,3 @@ projNamesList.addEventListener("click", (e) => {
     overlayContent.classList.remove("overlay-hidden");
   }
 });
-
-console.log(document.referrer);
