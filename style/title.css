@@ -93,6 +93,7 @@
 #title-btn:hover + #down-icon {
   opacity: 100%;
   transition-duration: 1s;
+  transition-delay: 0.15s;
   animation: title-animation 1.25s ease-in-out infinite;
 }
 
