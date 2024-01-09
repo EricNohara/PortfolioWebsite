@@ -19,7 +19,7 @@
     <script src="https://kit.fontawesome.com/61739c9a9f.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
+  <body onload="resetForm()">
     <div id="progressbar"></div>
     <div id="scrollpath"></div>
     <!-- TITLE PAGE, SCROLL TO VIEW REST OF PORTFOLIO -->
@@ -321,6 +321,11 @@
         showDots: false
       })
       </script> -->
+      <script>
+        function resetForm() {
+          document.getElementById("contact-form").reset();
+        }
+      </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
       <script>

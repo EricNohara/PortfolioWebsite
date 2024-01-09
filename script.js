@@ -63,3 +63,5 @@ projNamesList.addEventListener("click", (e) => {
     overlayContent.classList.remove("overlay-hidden");
   }
 });
+
+console.log(document.referrer);
