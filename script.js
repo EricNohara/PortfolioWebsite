@@ -6,44 +6,21 @@ import {
   scrollPath,
 } from "./modules/scrollbar.js";
 
+import { handleNavBarBtns, contactPage } from "./modules/navbar.js";
+
+const handleWindowScroll = function () {
+  handleUpdateScrollBar();
+  handleNavBarBtns();
+};
+
+// SCROLLBAR
 window.addEventListener("resize", resizeTotalHeight);
 
-window.addEventListener("scroll", handleUpdateScrollBar);
+window.addEventListener("scroll", handleWindowScroll);
 
 scrollPath.addEventListener("click", (e) => handleScrollBarClick(e));
 
 progress.addEventListener("click", (e) => handleScrollBarClick(e));
-
-// CODE FOR NAVBAR
-const titlePage = document.getElementById("title-page");
-const abtPage = document.getElementById("about-page");
-const projPage = document.getElementById("projects-page");
-const contactPage = document.getElementById("contact-page");
-
-const homeBtn = document.querySelector(".home-btn");
-const abtBtn = document.querySelector(".abt-btn");
-const projectsBtn = document.querySelector(".projects-btn");
-const contactBtn = document.querySelector(".contact-btn");
-const resumeBtn = document.querySelector(".resume-btn");
-const pages = [
-  [titlePage, homeBtn],
-  [abtPage, abtBtn],
-  [projPage, projectsBtn],
-  [contactPage, contactBtn],
-];
-
-window.addEventListener("scroll", () => {
-  const scrollPos = window.scrollY + 50;
-  pages.forEach((page) => {
-    const isVisible =
-      scrollPos >= page[0].offsetTop &&
-      scrollPos < page[0].offsetTop + page[0].offsetHeight;
-    if (!page[1].classList.contains("active") && isVisible)
-      page[1].classList.add("active");
-    else if (page[1].classList.contains("active") && !isVisible)
-      page[1].classList.remove("active");
-  });
-});
 
 // CODE FOR OPENING THE DROPDOWNS
 const opener = document.querySelectorAll(".opener");
