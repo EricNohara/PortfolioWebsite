@@ -7,6 +7,12 @@ import {
 } from "./modules/scrollbar.js";
 import { handleNavBarBtns, contactPage } from "./modules/navbar.js";
 import { opener, openerFunction } from "./modules/sublist-opener.js";
+import {
+  exitBtn,
+  projNamesList,
+  handleExit,
+  handleProjectNameClick,
+} from "./modules/overlay.js";
 
 const handleWindowScroll = function () {
   handleUpdateScrollBar();
@@ -23,34 +29,12 @@ scrollPath.addEventListener("click", (e) => handleScrollBarClick(e));
 progress.addEventListener("click", (e) => handleScrollBarClick(e));
 
 // CODE FOR OPENING THE DROPDOWNS
-
 opener.forEach((el) => openerFunction(el));
 
 // CODE FOR OVERLAY
-const exitBtn = document.getElementById("exit-icon");
-const projNamesList = document.getElementById("list");
-const overlayScreen = document.querySelector(".overlay-screen");
-const projects = document.querySelectorAll(".project");
-const navBar = document.getElementById("navbar");
+exitBtn.addEventListener("click", (e) => handleExit(e));
 
-exitBtn.addEventListener("click", (e) => {
-  e.target.parentElement.classList.add("overlay-hidden");
-  projects.forEach((el) => el.classList.add("overlay-hidden"));
-  navBar.classList.remove("overlay-hidden");
-  contactPage.style.setProperty("z-index", "100", "important");
-});
-
-projNamesList.addEventListener("click", (e) => {
-  const project = e.target;
-  if (project.tagName.toLowerCase() !== "p") return;
-  if (project.classList[0] !== "opener") {
-    const overlayContent = document.getElementById(project.dataset.projectName);
-    overlayScreen.classList.remove("overlay-hidden");
-    overlayContent.classList.remove("overlay-hidden");
-    navBar.classList.add("overlay-hidden");
-    contactPage.style.setProperty("z-index", "10", "important");
-  }
-});
+projNamesList.addEventListener("click", (e) => handleProjectNameClick(e));
 
 //CODE FOR SCROLL ANIMATION
 const hrObserver = new IntersectionObserver((entries) => {
