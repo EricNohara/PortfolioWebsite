@@ -74,13 +74,21 @@ projNamesList.addEventListener("click", (e) => {
 });
 
 //CODE FOR SCROLL ANIMATION
-const observer = new IntersectionObserver((entries) => {
+const hrObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) entry.target.classList.add("scroll-show-hr");
     else entry.target.classList.remove("scroll-show-hr");
   });
 });
 
-const hiddenElements = document.querySelectorAll(".scroll-hide-hr");
-hiddenElements.forEach((el) => observer.observe(el));
+const boxObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) entry.target.classList.add("scroll-show-box");
+    else entry.target.classList.remove("scroll-show-box");
+  });
+});
+
+const hiddenHrElements = document.querySelectorAll(".scroll-hide-hr");
+const hiddenBoxElements = document.querySelectorAll(".scroll-hide-box");
+hiddenHrElements.forEach((el) => hrObserver.observe(el));
+hiddenBoxElements.forEach((el) => boxObserver.observe(el));
