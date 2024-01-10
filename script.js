@@ -54,6 +54,7 @@ const exitBtn = document.getElementById("exit-icon");
 const projNamesList = document.getElementById("list");
 const overlayScreen = document.querySelector(".overlay-screen");
 const projects = document.querySelectorAll(".project");
+const navBar = document.getElementById("navbar");
 
 exitBtn.addEventListener("click", (e) => {
   e.target.parentElement.classList.add("overlay-hidden");

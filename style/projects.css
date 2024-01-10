@@ -98,8 +98,8 @@
   font-size: 1.75rem;
   font-weight: 100;
   justify-self: end;
-  margin-right: 6%;
-  margin-top: 5%;
+  margin-right: 2.5em;
+  margin-top: 2em;
   transition-duration: 0.4s;
 }
 
@@ -190,15 +190,15 @@
   font-weight: 300;
   font-size: 1.15rem;
   position: fixed;
-  top: 50%;
-  left: 8%;
+  top: 20rem;
+  left: 4rem;
   transition-duration: 0.5s;
 }
 
 #project-descriptions img:hover + .click-msg {
   color: var(--txtgrey);
   opacity: 100%;
-  left: 12%;
+  left: 8rem;
   pointer-events: all;
   animation: project-animation 1.25s ease-in-out infinite;
 }
@@ -210,5 +210,41 @@
   }
   50% {
     transform: translateX(25%);
+  }
+}
+
+@media screen and (max-width: 625px) {
+  #exit-icon {
+    font-size: 1.5em;
+  }
+
+  .project {
+    grid-template-columns: 12rem 12rem;
+  }
+
+  .project > h1 {
+    font-size: 2.4rem !important;
+  }
+
+  .project > h3 {
+    font-size: 0.8rem !important;
+  }
+
+  #project-descriptions img {
+    width: 24rem;
+  }
+
+  .img-link {
+    width: 24rem;
+  }
+
+  .proj-desc-txt {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .click-msg {
+    display: none;
   }
 }

@@ -23,6 +23,7 @@
   z-index: 9990 !important;
   opacity: 97.5%;
   transition-duration: 0.5s;
+  transition-delay: 0.15s;
 }
 
 .nav {
