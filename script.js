@@ -25,23 +25,24 @@ const handleWindowScroll = function () {
   handleNavBarBtns();
 };
 
-// SCROLLBAR
-window.addEventListener("resize", resizeTotalHeight);
+const appInit = function () {
+  // SCROLLBAR
+  window.addEventListener("resize", resizeTotalHeight);
+  window.addEventListener("scroll", handleWindowScroll);
+  scrollPath.addEventListener("click", (e) => handleScrollBarClick(e));
+  progress.addEventListener("click", (e) => handleScrollBarClick(e));
 
-window.addEventListener("scroll", handleWindowScroll);
+  // CODE FOR OPENING THE DROPDOWNS
+  opener.forEach((el) => openerFunction(el));
 
-scrollPath.addEventListener("click", (e) => handleScrollBarClick(e));
+  // CODE FOR OVERLAY
+  exitBtn.addEventListener("click", (e) => handleExit(e));
+  projNamesList.addEventListener("click", (e) => handleProjectNameClick(e));
 
-progress.addEventListener("click", (e) => handleScrollBarClick(e));
+  //CODE FOR SCROLL ANIMATION
+  hiddenHrElements.forEach((el) => handleHrObserve(el));
+  hiddenBoxElements.forEach((el) => handleBoxObserve(el));
+};
 
-// CODE FOR OPENING THE DROPDOWNS
-opener.forEach((el) => openerFunction(el));
-
-// CODE FOR OVERLAY
-exitBtn.addEventListener("click", (e) => handleExit(e));
-
-projNamesList.addEventListener("click", (e) => handleProjectNameClick(e));
-
-//CODE FOR SCROLL ANIMATION
-hiddenHrElements.forEach((el) => handleHrObserve(el));
-hiddenBoxElements.forEach((el) => handleBoxObserve(el));
+// Initialize the application
+appInit();
