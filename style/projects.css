@@ -204,6 +204,10 @@
   animation: project-animation 1.25s ease-in-out infinite;
 }
 
+#projects-page canvas {
+  z-index: -1 !important;
+}
+
 @keyframes project-animation {
   0%,
   100% {

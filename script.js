@@ -60,6 +60,7 @@ exitBtn.addEventListener("click", (e) => {
   e.target.parentElement.classList.add("overlay-hidden");
   projects.forEach((el) => el.classList.add("overlay-hidden"));
   navBar.classList.remove("overlay-hidden");
+  contactPage.style.setProperty("z-index", "100", "important");
 });
 
 projNamesList.addEventListener("click", (e) => {
@@ -70,6 +71,7 @@ projNamesList.addEventListener("click", (e) => {
     overlayScreen.classList.remove("overlay-hidden");
     overlayContent.classList.remove("overlay-hidden");
     navBar.classList.add("overlay-hidden");
+    contactPage.style.setProperty("z-index", "10", "important");
   }
 });
 
