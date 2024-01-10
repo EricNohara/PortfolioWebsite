@@ -273,4 +273,9 @@
   .dropdown > li > p {
     font-size: 1.25rem;
   }
+
+  .projects-sub {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
