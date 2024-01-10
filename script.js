@@ -13,6 +13,12 @@ import {
   handleExit,
   handleProjectNameClick,
 } from "./modules/overlay.js";
+import {
+  hiddenBoxElements,
+  hiddenHrElements,
+  handleBoxObserve,
+  handleHrObserve,
+} from "./modules/scroll-animations.js";
 
 const handleWindowScroll = function () {
   handleUpdateScrollBar();
@@ -37,21 +43,5 @@ exitBtn.addEventListener("click", (e) => handleExit(e));
 projNamesList.addEventListener("click", (e) => handleProjectNameClick(e));
 
 //CODE FOR SCROLL ANIMATION
-const hrObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) entry.target.classList.add("scroll-show-hr");
-    else entry.target.classList.remove("scroll-show-hr");
-  });
-});
-
-const boxObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) entry.target.classList.add("scroll-show-box");
-    else entry.target.classList.remove("scroll-show-box");
-  });
-});
-
-const hiddenHrElements = document.querySelectorAll(".scroll-hide-hr");
-const hiddenBoxElements = document.querySelectorAll(".scroll-hide-box");
-hiddenHrElements.forEach((el) => hrObserver.observe(el));
-hiddenBoxElements.forEach((el) => boxObserver.observe(el));
+hiddenHrElements.forEach((el) => handleHrObserve(el));
+hiddenBoxElements.forEach((el) => handleBoxObserve(el));
