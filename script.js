@@ -5,8 +5,8 @@ import {
   progress,
   scrollPath,
 } from "./modules/scrollbar.js";
-
 import { handleNavBarBtns, contactPage } from "./modules/navbar.js";
+import { opener, openerFunction } from "./modules/sublist-opener.js";
 
 const handleWindowScroll = function () {
   handleUpdateScrollBar();
@@ -23,12 +23,8 @@ scrollPath.addEventListener("click", (e) => handleScrollBarClick(e));
 progress.addEventListener("click", (e) => handleScrollBarClick(e));
 
 // CODE FOR OPENING THE DROPDOWNS
-const opener = document.querySelectorAll(".opener");
-opener.forEach((el) =>
-  el.addEventListener("click", (e) => {
-    e.target.nextElementSibling.classList.toggle("hidden");
-  })
-);
+
+opener.forEach((el) => openerFunction(el));
 
 // CODE FOR OVERLAY
 const exitBtn = document.getElementById("exit-icon");
