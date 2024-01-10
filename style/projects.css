@@ -22,6 +22,7 @@
     var(--black) 100%
   );
   position: relative;
+  z-index: 100;
 }
 
 .projects-header {
@@ -262,6 +263,11 @@
 }
 
 @media screen and (max-width: 700px) {
+  #projects-page canvas {
+    height: auto;
+    z-index: 0 !important;
+  }
+
   #project-names > li {
     font-size: 1.75rem;
   }

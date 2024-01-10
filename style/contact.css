@@ -23,6 +23,8 @@
     var(--dblue) 100%
   );
   color: var(--txtgrey);
+  position: relative;
+  z-index: 1000 !important;
 }
 
 #contact-page > header {
@@ -133,4 +135,16 @@
 #contact-info {
   display: grid;
   grid-template-columns: 15.5rem 15.5rem;
+}
+
+@media screen and (max-width: 725px) {
+  #contact-sub {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+  }
+
+  .info-link {
+    font-size: 1rem;
+  }
 }
