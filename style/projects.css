@@ -294,4 +294,8 @@
   #project-names p:hover {
     margin-right: 1rem;
   }
+
+  .nav {
+    font-size: 18px;
+  }
 }
