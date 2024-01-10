@@ -241,10 +241,36 @@
   .proj-desc-txt {
     font-size: 0.9rem;
   }
+
+  #project-2 > h1 {
+    font-size: 2.2rem !important;
+  }
+
+  #project-3 > h1 {
+    font-size: 1.95rem !important;
+  }
+
+  #project-6 > h1 {
+    font-size: 2.25rem !important;
+  }
 }
 
 @media screen and (max-width: 1150px) {
   .click-msg {
     display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #project-names > li {
+    font-size: 1.75rem;
+  }
+
+  .subscript {
+    font-size: 0.7rem;
+  }
+
+  .dropdown > li > p {
+    font-size: 1.25rem;
   }
 }
