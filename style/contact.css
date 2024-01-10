@@ -24,7 +24,7 @@
   );
   color: var(--txtgrey);
   position: relative;
-  z-index: 10 !important;
+  z-index: 100 !important;
 }
 
 #contact-page > header {

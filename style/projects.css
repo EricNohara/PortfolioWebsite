@@ -274,6 +274,7 @@
 
   #project-names > li {
     font-size: 1.75rem;
+    margin-right: 1.25rem;
   }
 
   .subscript {
@@ -287,5 +288,10 @@
   .projects-sub {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  #project-names a:hover,
+  #project-names p:hover {
+    margin-right: 1rem;
   }
 }
