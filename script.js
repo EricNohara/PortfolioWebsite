@@ -1,27 +1,18 @@
-// SCROLLBAR CODE
-const progress = document.getElementById("progressbar");
-const scrollPath = document.getElementById("scrollpath");
-let totalHeight = document.body.scrollHeight - window.innerHeight;
+import {
+  resizeTotalHeight,
+  handleUpdateScrollBar,
+  handleScrollBarClick,
+  progress,
+  scrollPath,
+} from "./modules/scrollbar.js";
 
-window.onresize = () =>
-  (totalHeight = document.body.scrollHeight - window.innerHeight);
+window.addEventListener("resize", resizeTotalHeight);
 
-window.onscroll = function () {
-  const progHeight = (window.scrollY / totalHeight) * 100;
-  progress.style.height = progHeight + "%";
-};
+window.addEventListener("scroll", handleUpdateScrollBar);
 
-scrollPath.addEventListener("click", (e) => {
-  const clickRatio = e.clientY / window.innerHeight;
-  const newHeight = totalHeight * clickRatio;
-  window.scrollTo({ top: newHeight });
-});
+scrollPath.addEventListener("click", (e) => handleScrollBarClick(e));
 
-progress.addEventListener("click", (e) => {
-  const clickRatio = e.clientY / window.innerHeight;
-  const newHeight = totalHeight * clickRatio;
-  window.scrollTo({ top: newHeight });
-});
+progress.addEventListener("click", (e) => handleScrollBarClick(e));
 
 // CODE FOR NAVBAR
 const titlePage = document.getElementById("title-page");
