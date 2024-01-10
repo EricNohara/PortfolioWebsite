@@ -94,10 +94,10 @@ projNamesList.addEventListener("click", (e) => {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
-    if (entry.isIntersecting) entry.target.classList.add("scroll-show");
-    else entry.target.classList.remove("scroll-show");
+    if (entry.isIntersecting) entry.target.classList.add("scroll-show-hr");
+    else entry.target.classList.remove("scroll-show-hr");
   });
 });
 
-const hiddenElements = document.querySelectorAll(".scroll-hidden");
+const hiddenElements = document.querySelectorAll(".scroll-hide-hr");
 hiddenElements.forEach((el) => observer.observe(el));

@@ -133,27 +133,25 @@ hr {
   color: var(--txtgrey);
 }
 
-.scroll-hidden {
+.scroll-hide-hr {
   opacity: 0;
-  filter: blur(5px);
   width: 0;
   transition: all 1s;
 }
 
 @media (prefers-reduced-motion) {
-  .scroll-hidden {
+  .scroll-hide-hr {
     transition: none;
   }
 }
 
-.scroll-show {
+.scroll-show-hr {
   opacity: 1;
-  filter: blur(0);
   width: 35em;
 }
 
 @media screen and (max-width: 1100px) {
-  .scroll-show {
+  .scroll-show-hr {
     width: 25em;
   }
 }
