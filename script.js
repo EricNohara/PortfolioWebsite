@@ -28,20 +28,6 @@ const pages = [
   [contactPage, contactBtn],
 ];
 
-const navBar = document.getElementById("navbar");
-
-navBar.addEventListener("click", (e) => {
-  const clickedBtn = e.target;
-  if (clickedBtn !== resumeBtn) {
-    [...clickedBtn.parentElement.children].slice(0, 4).forEach((btn) => {
-      if (btn.classList.contains("active")) btn.classList.remove("active");
-      btn.dataset.clicked = "false";
-    });
-    clickedBtn.classList.add("active");
-    clickedBtn.dataset.clicked = "true";
-  }
-});
-
 window.addEventListener("scroll", () => {
   const scrollPos = window.scrollY + 50;
   pages.forEach((page) => {
@@ -50,11 +36,7 @@ window.addEventListener("scroll", () => {
       scrollPos < page[0].offsetTop + page[0].offsetHeight;
     if (!page[1].classList.contains("active") && isVisible)
       page[1].classList.add("active");
-    else if (
-      page[1].classList.contains("active") &&
-      !isVisible &&
-      page[1].dataset.clicked === "false"
-    )
+    else if (page[1].classList.contains("active") && !isVisible)
       page[1].classList.remove("active");
   });
 });
