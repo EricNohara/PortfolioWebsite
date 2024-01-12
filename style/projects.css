@@ -303,11 +303,12 @@
 @media screen and (max-width: 500px) {
   #project-names > li {
     font-size: 1.5rem;
-    margin-right: 1rem;
+    margin-right: 0.75rem;
   }
 
   .subscript {
     font-size: 0.5rem;
+    margin-right: 0.4rem;
   }
 
   .dropdown > li > p {

@@ -52,7 +52,6 @@
 }
 
 #contact-page hr {
-  /* width: 55%; */
   margin-bottom: 1rem;
 }
 
@@ -146,5 +145,33 @@
 
   .info-link {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #contact-sub {
+    font-size: 0.75rem;
+  }
+
+  #contact-info {
+    grid-template-columns: 10rem 10rem;
+  }
+
+  .info-link {
+    font-size: 0.6rem;
+  }
+
+  #contact-form {
+    display: grid;
+    height: 20rem;
+    width: 50%;
+    margin: auto;
+    grid-template-rows: 12% 12% 52% 12%;
+    gap: 4%;
+    padding-bottom: 1rem;
+  }
+
+  .contact-input {
+    font-size: 0.75rem;
   }
 }
