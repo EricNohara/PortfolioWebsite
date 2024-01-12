@@ -314,4 +314,32 @@
   .dropdown > li > p {
     font-size: 1rem;
   }
+
+  #exit-icon {
+    font-size: 1em;
+  }
+
+  .project {
+    grid-template-columns: 8rem 8rem;
+  }
+
+  .project > h1 {
+    font-size: 1.75rem !important;
+  }
+
+  .project > h3 {
+    font-size: 0.4rem !important;
+  }
+
+  #project-descriptions img {
+    width: 16rem;
+  }
+
+  .img-link {
+    width: 16rem;
+  }
+
+  .proj-desc-txt {
+    font-size: 0.6rem;
+  }
 }
