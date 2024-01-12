@@ -171,3 +171,17 @@ hr {
     transition: none;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .page-header {
+    font-size: 3rem;
+  }
+
+  .scroll-show-hr {
+    width: 12.5em;
+  }
+
+  .subtxt {
+    font-size: 0.75rem;
+  }
+}

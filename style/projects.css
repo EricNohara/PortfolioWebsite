@@ -299,3 +299,18 @@
     font-size: 18px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  #project-names > li {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .subscript {
+    font-size: 0.5rem;
+  }
+
+  .dropdown > li > p {
+    font-size: 1rem;
+  }
+}
