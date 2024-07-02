@@ -105,7 +105,7 @@
 .name {
   letter-spacing: 1px;
   margin: 0.5rem 0 0 1rem;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   color: var(--grey);
   font-weight: 300;
 }
@@ -114,7 +114,7 @@
   font-weight: 200;
   font-style: italic;
   margin: 0.15rem 0 0 1rem;
-  font-size: 1.15rem;
+  font-size: 1rem;
   line-height: 1.6rem;
 }
 
