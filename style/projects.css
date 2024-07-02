@@ -171,6 +171,14 @@
   font-size: 2.85rem;
 }
 
+#project-11 > h1 {
+  font-size: 2rem;
+}
+
+#project-11 > h3 {
+  font-size: 1rem;
+}
+
 #projects-page canvas {
   z-index: -1 !important;
 }
